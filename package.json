@@ -1,0 +1,30 @@
+{
+  "name": "ink-inline-progress-bar",
+  "version": "0.0.1",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "repository": "https://github.com/zardoy/ink-progress-bar.git",
+  "author": "Vitaly Turovsky <vital2580@icloud.com>",
+  "license": "MIT",
+  "files": [
+    "build"
+  ],
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "prepublishOnly": "tsc && node scripts/prepare-package-json.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^15.12.4",
+    "@types/react": "^17.0.11",
+    "@zardoy/tsconfig": "^1.1.0",
+    "ink": "^3.0.8",
+    "react": "^17.0.2",
+    "typescript": "^4.3.4"
+  },
+  "peerDependencies": {
+    "ink": "^3.0.8",
+    "react": "^17.0.2"
+  }
+}
